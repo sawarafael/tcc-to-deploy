@@ -1,7 +1,15 @@
 import { Toolbar, Button, Typography, IconButton, AppBar } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
+import { useNavigate } from "react-router-dom";
+
 const Navbar = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate("/");
+  };
+
   return (
     <AppBar position="relative">
       <Toolbar>
@@ -11,6 +19,7 @@ const Navbar = () => {
           color="inherit"
           aria-label="menu"
           sx={{ mr: 2 }}
+          onClick={handleNavigate}
         >
           <MenuIcon />
         </IconButton>

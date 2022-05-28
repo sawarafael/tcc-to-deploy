@@ -1,4 +1,4 @@
-import { SideBar } from "../../components/SIdeBar";
+import { SideBar } from "../../components/Sidebar";
 import { Graphic } from "../../components/Graphic";
 import { TableListProcess } from "../../components/TableListProcess";
 

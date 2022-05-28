@@ -14,7 +14,7 @@ import { useNavigate } from "react-router-dom";
 export const Cadastro = () => {
   const navigate = useNavigate();
 
-  const handleNavigte = () => {
+  const handleNavigate = () => {
     navigate(`/`);
   };
 
@@ -104,10 +104,10 @@ export const Cadastro = () => {
         </Content>
       </Form>
       <Submit>
-        <Button id="cancel" onClick={handleNavigte}>
+        <Button id="cancel" onClick={handleNavigate}>
           Cancelar
         </Button>
-        <Button id="cad" onClick={handleNavigte}>
+        <Button id="cad" onClick={handleNavigate}>
           Cadastrar
         </Button>
       </Submit>

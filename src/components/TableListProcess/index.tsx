@@ -1,3 +1,4 @@
+import Input from "../Input";
 import { Container, Search } from "./styles";
 
 export const TableListProcess = () => {
@@ -5,7 +6,12 @@ export const TableListProcess = () => {
     <Container>
       <h1>Listagem de Processos</h1>
       <Search>
-        <input type="text" placeholder="pesquisar..." />
+        <Input
+          placeholder="Pesquise"
+          name={"PesquisarProcesso"}
+          onChange={() => console.log("deu bom")}
+          type="text"
+        />
         <button>Pesquisar</button>
       </Search>
 
