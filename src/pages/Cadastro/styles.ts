@@ -29,28 +29,18 @@ export const Content = styled.div`
 `;
 
 export const InputsForm = styled.div`
-  width: 100%;
-  margin: 25px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: 1px;
-
-  #input-left {
-    float: left;
-    width: 30%;
-    font-family: "Roboto", sans-serif;
-  }
-
-  #input-right {
-    float: right;
-    width: 30%;
-    /* margin-top: 0px;
-    margin-left: 150px; */
-  }
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
 
   #act-type {
-    border-radios: 10px;
+    border-radius: 10px;
   }
 
   input {
@@ -72,6 +62,12 @@ export const InputsForm = styled.div`
     text-align: center;
     font-size: 18px;
   }
+`;
+
+export const InputsColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 `;
 
 export const Submit = styled.div`

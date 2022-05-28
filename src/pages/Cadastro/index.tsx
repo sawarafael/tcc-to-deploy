@@ -3,6 +3,7 @@ import {
   Container,
   Content,
   Form,
+  InputsColumn,
   InputsForm,
   Submit,
   Title,
@@ -23,7 +24,7 @@ export const Cadastro = () => {
         <Title>Postagem de Processos</Title>
         <Content>
           <InputsForm>
-            <div id="input-left">
+            <InputsColumn>
               <label id="act-type">Tipo de Ação</label>
               <br />
               <select>
@@ -33,12 +34,10 @@ export const Cadastro = () => {
                 <option>Cautelar</option>
               </select>
               <br />
-              <br />
 
               <label>Cliente</label>
               <br />
               <input type="text" id="client" />
-              <br />
               <br />
 
               <label>Posição do Cliente</label>
@@ -48,12 +47,10 @@ export const Cadastro = () => {
                 <option>Autor</option>
               </select>
               <br />
-              <br />
 
               <label>Adverso</label>
               <br />
               <input type="text" id="adverse" />
-              <br />
               <br />
 
               <label>Situação</label>
@@ -64,7 +61,6 @@ export const Cadastro = () => {
                 <option>Executado</option>
               </select>
               <br />
-              <br />
 
               <label>Status</label>
               <br />
@@ -72,43 +68,38 @@ export const Cadastro = () => {
                 <option>Ativo</option>
                 <option>Inativo</option>
               </select>
-            </div>
+            </InputsColumn>
 
-            <div id="input-right">
+            <InputsColumn>
               <label>Posição do Adverso</label>
+
               <br />
               <select>
                 <option>Réu</option>
                 <option>Autor</option>
               </select>
               <br />
-              <br />
 
               <label>Número Processo</label>
               <br />
               <input type="text" id="num-process" />
-              <br />
               <br />
 
               <label>Juíz</label>
               <br />
               <input type="text" id="juiz" />
               <br />
-              <br />
 
               <label>Data da Abertura</label>
               <br />
               <input type="date" id="data" />
-              <br />
               <br />
 
               <label>Data Atualização</label>
               <br />
               <input type="date" id="data" />
               <br />
-              <br />
-              <br />
-            </div>
+            </InputsColumn>
           </InputsForm>
         </Content>
       </Form>
