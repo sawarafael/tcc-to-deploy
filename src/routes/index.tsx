@@ -12,6 +12,7 @@ const AppRoutes = () => {
       <Route path="/login" element={<Login />} />
       <Route path="/cadastro" element={<Cadastro />} />
       <Route path="/processos" element={<ListagemProcessos />} />
+      <Route path="/detalhar/:id" element={<ListagemProcessos />} />
     </Routes>
   );
 };
