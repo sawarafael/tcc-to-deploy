@@ -1,57 +1,97 @@
+import { DataGrid, GridColDef, GridRowsProp } from "@mui/x-data-grid";
 import Input from "../Input";
-import { Container, Search } from "./styles";
+import { Container, Search, Button } from "./styles";
 
 export const TableListProcess = () => {
+  const rows: GridRowsProp = [
+    {
+      id: 1,
+      NumeroProcesso: "123456789",
+      Data: "10/05/2020",
+      Cliente: "Cliente 1",
+      PosicaoCliente: "Autor",
+      Adverso: "Companhia M",
+      Situacao: "Pendente",
+    },
+    {
+      id: 2,
+      NumeroProcesso: "123456789",
+      Data: "10/05/2020",
+      Cliente: "Cliente 2",
+      PosicaoCliente: "Réu",
+      Adverso: "Companhia M",
+      Situacao: "Em Execução",
+    },
+    {
+      id: 3,
+      NumeroProcesso: "123456789",
+      Data: "10/05/2020",
+      Cliente: "Cliente 3",
+      PosicaoCliente: "Réu",
+      Adverso: "Companhia M",
+      Situacao: "Executado",
+    },
+    {
+      id: 4,
+      NumeroProcesso: "123456789",
+      Data: "10/05/2020",
+      Cliente: "Cliente 3",
+      PosicaoCliente: "Réu",
+      Adverso: "Companhia M",
+      Situacao: "Executado",
+    },
+  ];
+
+  const columns: GridColDef[] = [
+    {
+      field: "NumeroProcesso",
+      headerName: "Número do Processo",
+      width: 200,
+    },
+    {
+      field: "Data",
+      headerName: "Data Abertura",
+      width: 200,
+    },
+    {
+      field: "Cliente",
+      headerName: "Cliente",
+      width: 200,
+    },
+    {
+      field: "PosicaoCliente",
+      headerName: "Posição Cliente",
+      width: 200,
+    },
+    {
+      field: "Adverso",
+      headerName: "Adverso",
+      width: 200,
+    },
+    {
+      field: "Situacao",
+      headerName: "Situação",
+      width: 200,
+    },
+  ];
+
   return (
     <Container>
       <h1>Listagem de Processos</h1>
       <Search>
+        <br />
         <Input
-          placeholder="Pesquise"
+          placeholder="Nome do Cliente"
           name={"PesquisarProcesso"}
           onChange={() => console.log("deu bom")}
           type="text"
         />
-        <button>Pesquisar</button>
+        <Button variant="contained">Pesquisar</Button>
       </Search>
 
-      <table>
-        <tr>
-          <th>Número Processo</th>
-          <th>Data Abertura</th>
-          <th>Cliente</th>
-          <th>Posição Cliente</th>
-          <th>Adverso</th>
-          <th>Situação</th>
-        </tr>
-
-        <tr>
-          <td>1588512-2022</td>
-          <td>01/01/2022</td>
-          <td>João</td>
-          <td>Réu</td>
-          <td>Empresa N</td>
-          <td>Em Execução</td>
-        </tr>
-
-        <tr>
-          <td>1984547-2022</td>
-          <td>21/05/2022</td>
-          <td>Carlos</td>
-          <td>Auto</td>
-          <td>Empresa Y</td>
-          <td>Executado</td>
-        </tr>
-
-        <tr>
-          <td>1988517-2022</td>
-          <td>11/11/2022</td>
-          <td>Autor</td>
-          <td>Réu</td>
-          <td>Empresa X</td>
-          <td>Pendente</td>
-        </tr>
-      </table>
+      <div style={{ height: 365, width: "auto" }}>
+        <DataGrid rows={rows} columns={columns} />
+      </div>
     </Container>
   );
 };
