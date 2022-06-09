@@ -1,4 +1,3 @@
-import { SideBar } from "../../components/Sidebar";
 import { Graphic } from "../../components/Graphic";
 import { TableListProcess } from "../../components/TableListProcess";
 
@@ -7,8 +6,6 @@ import { Container, Information } from "./styles";
 const ListagemProcessos = () => {
   return (
     <Container>
-      <SideBar />
-
       <div className="content">
         <Information>
           <div>
