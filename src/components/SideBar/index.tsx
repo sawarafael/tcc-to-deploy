@@ -1,6 +1,6 @@
-import { SideBarButton } from "../SideBarButton";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import Logo from "../../assets/image.png";
+import { SideBarButton } from "../SideBarButton";
 
 import { Container } from "./styles";
 
@@ -13,12 +13,12 @@ export const SideBar = () => {
         <img src={Logo} alt="logo" />
 
         <div className="information">
-          <span>Nome usuario</span>
+          <span>Nome de usuário</span>
           <p>Cargo</p>
         </div>
       </header>
 
-      <SideBarButton>Pocessos</SideBarButton>
+      <SideBarButton>Processos</SideBarButton>
       <SideBarButton>Configurações</SideBarButton>
     </Container>
   );

@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import { Button as MButton } from "@material-ui/core";
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -34,3 +34,5 @@ export const Button = styled(MButton)`
     color: black;
   }
 `;
+
+export const DataContainer = styled.div``;

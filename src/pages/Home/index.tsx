@@ -1,5 +1,5 @@
-import PostAddIcon from "@mui/icons-material/PostAdd";
 import BadgeIcon from "@mui/icons-material/Badge";
+import PostAddIcon from "@mui/icons-material/PostAdd";
 
 import { LinksPages, StyledDiv } from "./styles";
 
@@ -14,7 +14,7 @@ const Home = () => {
 
       <LinksPages to="/cadastro">
         <a>
-          <PostAddIcon fontSize="large" /> Cadastra
+          <PostAddIcon fontSize="large" /> Cadastrar
         </a>
       </LinksPages>
     </StyledDiv>

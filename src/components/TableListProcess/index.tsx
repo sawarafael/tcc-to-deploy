@@ -1,9 +1,20 @@
-import { DataGrid, GridColDef, GridRowsProp } from "@mui/x-data-grid";
+import {
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+} from "@mui/material";
+import { useNavigate } from "react-router-dom";
 import Input from "../Input";
-import { Container, Search, Button } from "./styles";
+import { Button, Container, Search } from "./styles";
 
 export const TableListProcess = () => {
-  const rows: GridRowsProp = [
+  const navigate = useNavigate();
+
+  const rows = [
     {
       id: 1,
       NumeroProcesso: "123456789",
@@ -42,7 +53,7 @@ export const TableListProcess = () => {
     },
   ];
 
-  const columns: GridColDef[] = [
+  const columns = [
     {
       field: "NumeroProcesso",
       headerName: "Número do Processo",
@@ -88,10 +99,37 @@ export const TableListProcess = () => {
         />
         <Button variant="contained">Pesquisar</Button>
       </Search>
-
-      <div style={{ height: 365, width: "auto" }}>
-        <DataGrid rows={rows} columns={columns} />
-      </div>
+      <TableContainer component={Paper}>
+        <Table sx={{ minWidth: 650 }}>
+          <TableHead>
+            <TableRow>
+              {columns.map((column) => (
+                <TableCell>{column.headerName}</TableCell>
+              ))}
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {rows.map((row) => {
+              return (
+                <TableRow
+                  hover
+                  style={{ cursor: "pointer" }}
+                  key={row.id}
+                  sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+                  onClick={() => navigate(`/detalhar/:${row.id}`)}
+                >
+                  <TableCell>{row.NumeroProcesso}</TableCell>
+                  <TableCell>{row.Data}</TableCell>
+                  <TableCell>{row.Cliente}</TableCell>
+                  <TableCell>{row.PosicaoCliente}</TableCell>
+                  <TableCell>{row.Adverso}</TableCell>
+                  <TableCell>{row.Situacao}</TableCell>
+                </TableRow>
+              );
+            })}
+          </TableBody>
+        </Table>
+      </TableContainer>
     </Container>
   );
 };
