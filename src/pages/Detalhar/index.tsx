@@ -1,4 +1,11 @@
 import { Box, Button, ButtonBox, Column, Container, Label } from "./styles";
+import {
+  Table,
+  TableBody,
+  TableContainer,
+  TableHead,
+  TableRow,
+} from "@mui/material";
 
 export const Detalhar = () => {
   return (
@@ -10,10 +17,62 @@ export const Detalhar = () => {
       <Container>
         <Column>
           <Box>
-            <Label variant="h5">Informações Gerais</Label>
+            <TableContainer>
+              <Table>
+                <TableHead>
+                  <Label variant="h5">Informações Principais</Label>
+                  <br />
+                </TableHead>
+                <TableBody>
+                  <TableRow>
+                    {" "}
+                    <Label variant="h6">Data de Abertura</Label>
+                    <Label variant="subtitle1">05/20/2022</Label>
+                  </TableRow>
+                  <br />
+                  <TableRow>
+                    {" "}
+                    <Label variant="h6">Situação</Label>
+                    <Label variant="subtitle1">Em Execução</Label>
+                  </TableRow>
+                  <br />
+                  <TableRow>
+                    {" "}
+                    <Label variant="h6">Status</Label>
+                    <Label variant="subtitle1">Ativo</Label>
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </TableContainer>
           </Box>
           <Box>
-            <Label variant="h5">Informações Adicionais</Label>
+            <TableContainer>
+              <Table>
+                <TableHead>
+                  <Label variant="h5">Informações Adicionais</Label>
+                  <br />
+                </TableHead>
+                <TableBody>
+                  <TableRow>
+                    {" "}
+                    <Label variant="h6">Tipo de Ação</Label>
+                    <Label variant="subtitle1">05/20/2022</Label>
+                  </TableRow>
+                  <br />
+                  <TableRow>
+                    {" "}
+                    <Label variant="h6">Situação</Label>
+                    <Label variant="subtitle1">Em Execução</Label>
+                  </TableRow>
+                  <br />
+                  <TableRow>
+                    {" "}
+                    <Label variant="h6">Status</Label>
+                    <Label variant="subtitle1">Ativo</Label>
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </TableContainer>
           </Box>
         </Column>
         <Column>

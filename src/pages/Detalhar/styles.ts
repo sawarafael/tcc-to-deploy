@@ -14,23 +14,23 @@ export const Container = styled("div")`
   margin-top: 20px;
 `;
 
-export const Box = styled("div")`
-  width: 100%;
-  margin: 15px;
-  background-color: #fff;
-  border-radius: 16px;
-  border: 1px solid #ccc;
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-`;
-
 export const Column = styled("div")`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+`;
+
+export const Box = styled("div")`
+  width: 100%;
+  margin: 10px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Label = styled(MTypography)``;
