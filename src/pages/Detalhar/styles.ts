@@ -7,16 +7,17 @@ import styled from "styled-components";
 export const Container = styled("div")`
   width: 90%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: stretch;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
 `;
 
 export const Box = styled("div")`
   width: 100%;
   margin: 15px;
-  background-color: #c4c4c4;
+  background-color: #fff;
   border-radius: 16px;
   border: 1px solid #ccc;
   display: flex;
