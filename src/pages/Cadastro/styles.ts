@@ -7,6 +7,7 @@ import {
 export const Container = styled.div`
   font-family: "Roboto", sans-serif;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -18,6 +19,7 @@ export const Label = styled(MTypography)`
 
 export const Form = styled.form`
   width: 45%;
+  height: 450px;
   display: flex;
   flex-direction: column;
   align-items: center;
