@@ -1,73 +1,55 @@
 import styled from "styled-components";
+import {
+  Typography as MTypography,
+  TextField as MTextfield,
+} from "@material-ui/core";
 
 export const Container = styled.div`
   font-family: "Roboto", sans-serif;
-
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: stretch;
 `;
 
-export const Title = styled.h1``;
+export const Label = styled(MTypography)`
+  display: flex;
+`;
 
 export const Form = styled.form`
-  width: 90%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-`;
-
-export const Content = styled.div`
-  width: 100%;
   margin: 15px;
-  background-color: #c4c4c4;
-  border-radius: 16px;
-  border: 1px solid #ccc;
-  display: flex;
+  margin-left: 30%;
+  padding: 10px;
+  background-color: #fafafa;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
 `;
 
 export const InputsForm = styled.div`
+  width: 100%;
+  margin: 10px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
   align-items: stretch;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-
-  #act-type {
-    border-radius: 10px;
-  }
-
-  input {
-    width: 250px;
-    height: 28px;
-    border-radius: 5px;
-    border: none;
-  }
-
-  select {
-    width: 250px;
-    font-size: 20px;
-    border-radius: 5px;
-    border: none;
-  }
-
-  #data {
-    width: 170px;
-    text-align: center;
-    font-size: 18px;
-  }
+  justify-content: space-between;
 `;
 
-export const InputsColumn = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
+export const Select = styled.select`
+  width: 250px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+`;
+
+export const Input = styled(MTextfield)`
+  width: 250px;
+  height: 28px;
+  border-radius: 5px;
+  border: none;
 `;
 
 export const Submit = styled.div`
