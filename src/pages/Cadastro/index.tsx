@@ -52,13 +52,13 @@ export const Cadastro = () => {
         </InputsForm>
         <br />
         <InputsForm>
-          <Label variant="h6">Descrição da Ação</Label>
+          <Label variant="h6">Causa da Ação</Label>
           <Input
-            placeholder="Descrição"
+            placeholder="Causa"
             variant="outlined"
             size="small"
             multiline
-            rows={3}
+            rows={4}
           />
         </InputsForm>
         <br />

@@ -18,7 +18,7 @@ export const Label = styled(MTypography)`
 `;
 
 export const Form = styled.form`
-  width: 45%;
+  width: 40%;
   height: 450px;
   display: flex;
   flex-direction: column;
