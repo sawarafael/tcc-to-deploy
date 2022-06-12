@@ -1,4 +1,3 @@
-import { Box, Button, ButtonBox, Column, Container, Label } from "./styles";
 import {
   Table,
   TableBody,
@@ -6,14 +5,23 @@ import {
   TableHead,
   TableRow,
 } from "@mui/material";
+import {
+  Box,
+  Button,
+  ButtonBox,
+  Column,
+  Container,
+  Label,
+  LabelTitle,
+} from "./styles";
 
 export const Detalhar = () => {
   return (
     <>
-      <Label variant="h4" boxSizing={"border-box"}>
+      <LabelTitle variant="h4" boxSizing={"border-box"}>
         <strong>Processo: </strong>
         Nº 123456789
-      </Label>
+      </LabelTitle>
       <Container>
         <Column>
           <Box>
