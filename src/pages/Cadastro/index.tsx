@@ -5,6 +5,7 @@ import {
   Input,
   InputsForm,
   Label,
+  LabelTitle,
   Submit,
 } from "./styles";
 
@@ -20,7 +21,7 @@ export const Cadastro = () => {
 
   return (
     <Container>
-      <Label variant="h4">Postagem de Processos</Label>
+      <LabelTitle variant="h4">Postagem de Processos</LabelTitle>
       <Form>
         <InputsForm>
           <Label variant="h6">Tipo de Ação</Label>

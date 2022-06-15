@@ -11,7 +11,7 @@ export const Container = styled("div")`
   align-items: stretch;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 5px;
 `;
 
 export const Column = styled("div")`
@@ -43,6 +43,15 @@ export const Label = styled(MTypography)``;
 export const ButtonBox = styled("div")`
   display: flex;
   flex-direction: reverse-row;
+  margin-top: 22px;
+  margin-right: 8.4%;
+`;
+
+export const ArkBox = styled("div")`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 12px;
 `;
 
 export const Button = styled(MButton)`

@@ -17,6 +17,11 @@ export const Label = styled(MTypography)`
   display: flex;
 `;
 
+export const LabelTitle = styled(MTypography)`
+  font-size: 25px;
+  margin: 30px 0px 0px 220px;
+`;
+
 export const Form = styled.form`
   width: 40%;
   height: 450px;
