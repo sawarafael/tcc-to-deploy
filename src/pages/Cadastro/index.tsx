@@ -53,6 +53,21 @@ export const Cadastro = () => {
         </InputsForm>
         <br />
         <InputsForm>
+          <Label variant="h6">Valor da Causa</Label>
+          <Input placeholder="R$" variant="outlined" size="small" />
+        </InputsForm>
+        <br />
+        <InputsForm>
+          <Label variant="h6">Instância</Label>
+          <Input placeholder="Instância" variant="outlined" size="small" />
+        </InputsForm>
+        <br />
+        <InputsForm>
+          <Label variant="h6">Juiz Responsável</Label>
+          <Input placeholder="Juiz Responsável" variant="outlined" size="small" />
+        </InputsForm>
+        <br />
+        <InputsForm>
           <Label variant="h6">Causa da Ação</Label>
           <Input
             placeholder="Causa"

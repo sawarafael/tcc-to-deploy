@@ -24,7 +24,7 @@ export const LabelTitle = styled(MTypography)`
 
 export const Form = styled.form`
   width: 40%;
-  height: 450px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
