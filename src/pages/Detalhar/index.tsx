@@ -199,7 +199,7 @@ export const Detalhar = () => {
             <Label variant="h6">
               {" "}
               <strong>Data: </strong>
-              05/20/2022
+              20/05/2022
             </Label>
             <Label variant="h6">
               {" "}

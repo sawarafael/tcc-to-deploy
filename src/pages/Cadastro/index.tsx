@@ -34,27 +34,13 @@ export const Cadastro = () => {
         </InputsForm>
         <br />
         <InputsForm>
-          <Label variant="h6">Posição do Cliente</Label>
-          <Input
-            placeholder="Posiçao do Cliente"
-            variant="outlined"
-            size="small"
-            select
-            defaultValue={"Réu"}
-          >
-            <MenuItem value="Réu">Réu</MenuItem>
-            <MenuItem value="Autor">Autor</MenuItem>
-          </Input>
+          <Label variant="h6">Data de Abertura</Label>
+          <Input type='date' placeholder="" variant="outlined" size="small" />
         </InputsForm>
         <br />
         <InputsForm>
           <Label variant="h6">Adverso</Label>
           <Input placeholder="Adverso" variant="outlined" size="small" />
-        </InputsForm>
-        <br />
-        <InputsForm>
-          <Label variant="h6">Valor da Causa</Label>
-          <Input placeholder="R$" variant="outlined" size="small" />
         </InputsForm>
         <br />
         <InputsForm>
@@ -76,6 +62,71 @@ export const Cadastro = () => {
             multiline
             rows={4}
           />
+        </InputsForm>
+        <br />
+      </Form>
+      
+      <LabelTitle variant="h4">Detalhes do Cliente</LabelTitle>
+      
+      <Form>
+        <InputsForm>
+          <Label variant="h6">Nome do Cliente</Label>
+          <Input placeholder="Nome" variant="outlined" size="small" />
+        </InputsForm>
+        <br />
+        <InputsForm>
+          <Label variant="h6">Posição do Cliente</Label>
+          <Input
+            placeholder="Posiçao do Cliente"
+            variant="outlined"
+            size="small"
+            select
+            defaultValue={"Réu"}
+          >
+            <MenuItem value="Réu">Réu</MenuItem>
+            <MenuItem value="Autor">Autor</MenuItem>
+          </Input>
+        </InputsForm>
+        <br />
+        <InputsForm>
+          <Label variant="h6">Idade</Label>
+          <Input placeholder="Idade" variant="outlined" size="small" />
+        </InputsForm>
+        <br />
+        <InputsForm>
+          <Label variant="h6">CPF</Label>
+          <Input placeholder="CPF" variant="outlined" size="small" />
+        </InputsForm>
+        <br />
+        <InputsForm>
+          <Label variant="h6">RG</Label>
+          <Input placeholder="RG" variant="outlined" size="small" />
+        </InputsForm>
+        <br />
+        <InputsForm>
+          <Label variant="h6">Estado Civil</Label>
+          <Input placeholder="Estado Civil" variant="outlined" size="small" />
+        </InputsForm>
+        <br />
+        <InputsForm>
+          <Label variant="h6">Gênero</Label>
+          <Input
+            placeholder="Gênero"
+            variant="outlined"
+            size="small"
+            select
+            defaultValue={""}
+          >
+          <MenuItem value="Réu">Homem Cis</MenuItem>
+          <MenuItem value="Autor">Mulher Cis</MenuItem>
+          <MenuItem value="Réu">Transgênero</MenuItem>
+          <MenuItem value="Autor">Não Binário</MenuItem>
+          </Input>
+        </InputsForm>
+        <br />
+        <InputsForm>
+          <Label variant="h6">Valor da Causa</Label>
+          <Input placeholder="R$" variant="outlined" size="small" />
         </InputsForm>
         <br />
       </Form>
