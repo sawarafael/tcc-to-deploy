@@ -3,33 +3,25 @@ import {
   Typography as MTypography,
   TextField as MTextfield,
 } from "@material-ui/core";
-
-export const Container = styled.div`
-  font-family: "Roboto", sans-serif;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-`;
+import { theme } from "../../components/Styles/theme";
 
 export const Label = styled(MTypography)`
   display: flex;
 `;
 
 export const LabelTitle = styled(MTypography)`
+  font-weight: bold;
   font-size: 25px;
-  margin: 30px 0px 0px 220px;
+  margin: 30px 0px 0px 17px;
 `;
 
 export const Form = styled.form`
-  width: 40%;
+  width: 100%;
   height: 650px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 15px;
-  margin-left: 30%;
   padding: 10px;
   background-color: #fafafa;
   border-radius: 5px;
@@ -69,14 +61,22 @@ export const Button = styled.button`
   font-family: "Roboto", sans-serif;
   text-align: center;
   width: 300px;
-  height: 35px;
   border-radius: 5px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   font-size: 18px;
   font-weight: bold;
+  background: ${theme.palette.primary.main};
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  padding: 10px 40px;
+
+  transition: transform 0.5s;
 
   &:hover {
     cursor: pointer;
+    transform: translateX(2px) translateY(-2px);
+    box-shadow: 2px 2px 7px black;
   }
 
   #cancel {
