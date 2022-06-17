@@ -76,7 +76,15 @@ export const Cadastro = () => {
                 size="small"
                 multiline
                 rows={4}
+                style={{
+                  marginBottom: "40px",
+                }}
               />
+            </InputsForm>
+            <br />
+            <InputsForm>
+              <Label variant="h6">Valor da Causa</Label>
+              <Input placeholder="R$" variant="outlined" size="small" />
             </InputsForm>
             <br />
           </Form>
@@ -145,10 +153,7 @@ export const Cadastro = () => {
               </Input>
             </InputsForm>
             <br />
-            <InputsForm>
-              <Label variant="h6">Valor da Causa</Label>
-              <Input placeholder="R$" variant="outlined" size="small" />
-            </InputsForm>
+
             <br />
           </Form>
         </Grid>
