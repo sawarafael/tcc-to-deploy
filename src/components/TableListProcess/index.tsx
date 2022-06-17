@@ -19,6 +19,7 @@ export const TableListProcess = () => {
       id: 1,
       NumeroProcesso: "123456789",
       Data: "10/05/2020",
+      DataAtt: "05/07/2021",
       Cliente: "Cliente 1",
       PosicaoCliente: "Autor",
       Adverso: "Companhia M",
@@ -28,6 +29,7 @@ export const TableListProcess = () => {
       id: 2,
       NumeroProcesso: "123456789",
       Data: "10/05/2020",
+      DataAtt: "05/07/2021",
       Cliente: "Cliente 2",
       PosicaoCliente: "Réu",
       Adverso: "Companhia M",
@@ -37,6 +39,7 @@ export const TableListProcess = () => {
       id: 3,
       NumeroProcesso: "123456789",
       Data: "10/05/2020",
+      DataAtt: "05/07/2021",
       Cliente: "Cliente 3",
       PosicaoCliente: "Réu",
       Adverso: "Companhia M",
@@ -46,6 +49,7 @@ export const TableListProcess = () => {
       id: 4,
       NumeroProcesso: "123456789",
       Data: "10/05/2020",
+      DataAtt: "05/07/2021",
       Cliente: "Cliente 3",
       PosicaoCliente: "Réu",
       Adverso: "Companhia M",
@@ -62,6 +66,11 @@ export const TableListProcess = () => {
     {
       field: "Data",
       headerName: "Data Abertura",
+      width: 200,
+    },
+    {
+      field: "DataAtt",
+      headerName: "Data Atualização",
       width: 200,
     },
     {
@@ -120,6 +129,7 @@ export const TableListProcess = () => {
                 >
                   <TableCell>{row.NumeroProcesso}</TableCell>
                   <TableCell>{row.Data}</TableCell>
+                  <TableCell>{row.DataAtt}</TableCell>
                   <TableCell>{row.Cliente}</TableCell>
                   <TableCell>{row.PosicaoCliente}</TableCell>
                   <TableCell>{row.Adverso}</TableCell>
