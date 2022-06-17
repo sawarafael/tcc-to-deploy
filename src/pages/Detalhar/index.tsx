@@ -55,12 +55,6 @@ export const Detalhar = () => {
                   <br />
                   <TableRow>
                     {" "}
-                    <Label variant="h6">Data de Atualização</Label>
-                    <Label variant="subtitle1">05/07/2021</Label>
-                  </TableRow>
-                  <br />
-                  <TableRow>
-                    {" "}
                     <Label variant="h6">Situação</Label>
                     <Label variant="subtitle1">Em Execução</Label>
                   </TableRow>
@@ -205,7 +199,7 @@ export const Detalhar = () => {
             <Label variant="h6">
               {" "}
               <strong>Data: </strong>
-              20/05/2022
+              05/07/2021
             </Label>
             <Label variant="h6">
               {" "}
